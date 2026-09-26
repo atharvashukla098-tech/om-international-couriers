@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-obsidian-void: #030712;
+  --color-nautical-depth: #060E1E;
+  --color-laser-lime: #10B981;
+  --color-aero-emerald: #10B981;
+  --color-cyan-telemetry: #00F0FF;
+  --color-glass-surface: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+  --color-background: #030712;
+  --color-foreground: #ededed;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #030712 0%, #060E1E 100%);
+  color: var(--color-foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: clip;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.3);
+  color: #fff;
+}
+
+/* Canvas container */
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+}
+
+/* GPU composite promotion & mobile touch optimizations */
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+canvas {
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
