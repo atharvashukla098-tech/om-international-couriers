@@ -39,8 +39,14 @@ export async function queryTracking(query: string, type: TrackingSearchType = 't
 
   try {
     const res = await fetch(`/api/tracking?query=${encodeURIComponent(cleanQuery)}&type=${type}`);
-    if (!res.ok) {
-      throw new Error(`Server returned ${res.status}`);
+    if (res.status === 429) {
+      return {
+        success: false,
+        trackingNo: cleanQuery,
+        status: 'Rate Limited',
+        events: [],
+        error: 'Too many queries. Please wait 30 seconds before searching again.',
+      };
     }
     const data: TrackingResult = await res.json();
     return data;
@@ -54,4 +60,5 @@ export async function queryTracking(query: string, type: TrackingSearchType = 't
       error: errorMsg,
     };
   }
+
 }

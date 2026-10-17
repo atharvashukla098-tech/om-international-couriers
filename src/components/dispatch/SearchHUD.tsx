@@ -155,12 +155,16 @@ export default function SearchHUD({ onSelectLocation, visible = true, className 
             value={query}
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
+            maxLength={100}
+            autoComplete="off"
+            spellCheck="false"
             onFocus={() => {
               if (results.length > 0) setIsOpen(true);
             }}
             placeholder="Search any city, airport, or corridor..."
             className="flex-1 bg-transparent text-white text-xs sm:text-sm placeholder:text-white/40 outline-none font-sans"
           />
+
           {isLoading && <Loader2 className="w-4 h-4 text-white/40 animate-spin shrink-0" />}
           {!isLoading && query && (
             <button onClick={clearSearch} className="shrink-0 p-1">

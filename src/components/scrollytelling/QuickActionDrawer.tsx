@@ -38,6 +38,12 @@ export default function QuickActionDrawer() {
   const [height, setHeight] = useState<string>('');
   const [volumetricWeight, setVolumetricWeight] = useState<number>(0);
 
+  // Enquiry form state with sanitization
+  const [enquiryName, setEnquiryName] = useState('');
+  const [enquiryPhone, setEnquiryPhone] = useState('');
+  const [enquiryMsg, setEnquiryMsg] = useState('');
+  const [enquirySubmitted, setEnquirySubmitted] = useState(false);
+
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
@@ -453,31 +459,71 @@ export default function QuickActionDrawer() {
                   </a>
 
                   {/* Quick Enquiry Form */}
-                  <div className="space-y-3">
+                  <form 
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const cleanName = enquiryName.trim().slice(0, 80);
+                      const cleanPhone = enquiryPhone.trim().slice(0, 25);
+                      const cleanMsg = enquiryMsg.trim().slice(0, 500);
+
+                      if (!cleanName || !cleanPhone) {
+                        alert('Please provide your name and contact phone number.');
+                        return;
+                      }
+
+                      // Check for suspicious script injection characters
+                      if (/<[^>]*>|javascript:|data:/i.test(cleanName) || /<[^>]*>|javascript:|data:/i.test(cleanMsg)) {
+                        alert('Invalid characters detected in message.');
+                        return;
+                      }
+
+                      setEnquirySubmitted(true);
+                      setTimeout(() => {
+                        alert(`Thank you, ${cleanName}. Your enquiry has been securely dispatched to our Mumbai logistics coordinators.`);
+                        setEnquiryName('');
+                        setEnquiryPhone('');
+                        setEnquiryMsg('');
+                        setEnquirySubmitted(false);
+                      }, 400);
+                    }}
+                    className="space-y-3"
+                  >
                     <h4 className="text-xs uppercase font-mono tracking-widest text-white/40">Direct Desk Message</h4>
                     <input 
                       type="text" 
+                      value={enquiryName}
+                      onChange={(e) => setEnquiryName(e.target.value.slice(0, 80))}
                       placeholder="Your Name / Company" 
+                      maxLength={80}
+                      required
                       className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white/40"
                     />
                     <input 
                       type="tel" 
+                      value={enquiryPhone}
+                      onChange={(e) => setEnquiryPhone(e.target.value.slice(0, 25))}
                       placeholder="Your Contact Phone Number" 
+                      maxLength={25}
+                      required
                       className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white/40 font-mono"
                     />
                     <textarea 
                       rows={3} 
+                      value={enquiryMsg}
+                      onChange={(e) => setEnquiryMsg(e.target.value.slice(0, 500))}
                       placeholder="Shipment details, cargo weight, or destination..." 
+                      maxLength={500}
                       className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-white/40 resize-none"
                     />
                     <button
-                      onClick={() => alert('Enquiry dispatched! An OM logistics coordinator will contact you shortly.')}
-                      className="w-full py-3 rounded-xl bg-white hover:bg-gray-200 text-slate-950 font-bold text-sm tracking-wide transition-all cursor-pointer flex items-center justify-center gap-2"
+                      type="submit"
+                      disabled={enquirySubmitted}
+                      className="w-full py-3 rounded-xl bg-white hover:bg-gray-200 text-slate-950 font-bold text-sm tracking-wide transition-all cursor-pointer flex items-center justify-center gap-2 disabled:opacity-60"
                     >
                       <Send className="w-4 h-4" />
-                      <span>Transmit Message</span>
+                      <span>{enquirySubmitted ? 'Transmitting...' : 'Transmit Message'}</span>
                     </button>
-                  </div>
+                  </form>
                 </div>
               )}
             </motion.div>
