@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Column 1 */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-2">OM International</h3>
+            <h3 className="text-xl font-bold text-white mb-2">First Flight Global</h3>
             <p className="text-sm text-white/40">Mumbai&apos;s Premier Courier & Cargo Services</p>
             <p className="text-sm text-white/40 mt-1">Established 1996</p>
           </div>
@@ -40,23 +40,22 @@ export function Footer() {
           <div className="flex flex-col gap-3">
             <h4 className="text-sm font-semibold text-white mb-2">Corporate Office</h4>
             <p className="text-xs text-white/50 leading-relaxed">
-              51, Suraj Bhavan, Ground Floor, Karel Wadi, Thakurdwar, Mumbai - 400002, Maharashtra, India
+              Demo Terminal 2, Air Cargo Complex, Sahar, Mumbai - 400099, India
             </p>
             <div className="flex flex-col gap-1 text-xs font-mono text-white/60 mt-1">
-              <a href="tel:+919820729615" className="hover:text-[#00F0FF] transition-colors">
-                Tel: +91 9820729615 / 022 2386 0032
+              <a href="tel:+912255550199" className="hover:text-[#00F0FF] transition-colors">
+                Tel: +91 22 5555 0199 / +91 98000 00000
               </a>
-              <a href="https://wa.me/919869042220" target="_blank" rel="noopener noreferrer" className="hover:text-[#10B981] transition-colors">
-                WhatsApp: +91 9869042220
-              </a>
-              <a href="mailto:cs.omcourierservices@gmail.com" className="hover:text-white transition-colors truncate">
-                cs.omcourierservices@gmail.com
+              <span className="text-white/60">
+                WhatsApp: +91 98000 00000 (Demo)
+              </span>
+              <a href="mailto:contact@firstflight-demo.com" className="hover:text-white transition-colors truncate">
+                contact@firstflight-demo.com
               </a>
             </div>
             <a 
-              href="https://admin.omcourier.in/" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="#login" 
+              onClick={(e) => { e.preventDefault(); alert("First Flight Global Partner Portal is currently in demonstration mode."); }}
               className="text-[11px] font-mono text-white/30 hover:text-white/70 transition-colors pt-2 border-t border-white/5"
             >
               Partner & Franchise Login →
@@ -66,7 +65,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/[0.06] gap-4">
           <p className="text-xs text-white/20 text-center md:text-left">
-            © 2024 OM International Courier Cargo Services. All rights reserved.
+            © 2026 First Flight Global Express. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link href="#" className="text-xs text-white/20 hover:text-white transition-colors">

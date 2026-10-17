@@ -54,8 +54,8 @@ export default function QuickActionDrawer() {
         setActiveDrawer(custom.detail);
       }
     };
-    window.addEventListener('om-open-drawer', handler);
-    return () => window.removeEventListener('om-open-drawer', handler);
+    window.addEventListener('ff-open-drawer', handler);
+    return () => window.removeEventListener('ff-open-drawer', handler);
   }, []);
 
   useEffect(() => {
@@ -229,7 +229,7 @@ export default function QuickActionDrawer() {
                         type="text" 
                         value={trackingNumber}
                         onChange={(e) => setTrackingNumber(e.target.value)}
-                        placeholder="e.g. OM-8921-IN or your docket no."
+                        placeholder="e.g. FF-8921-IN or your docket no."
                         className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-white font-mono text-sm focus:outline-none focus:border-[#00F0FF]/60 focus:bg-white/[0.06] transition-colors"
                       />
                     </div>
@@ -318,7 +318,7 @@ export default function QuickActionDrawer() {
                             <p className="font-semibold text-white">Not Found</p>
                             <p className="text-white/60 mt-0.5">{trackingResult.error}</p>
                             <p className="mt-2 text-[10px] font-mono text-[#10B981]">
-                              Tip: Enter &quot;OM-8921-IN&quot; to test simulated response.
+                              Tip: Enter &quot;FF-8921-IN&quot; to test simulated response.
                             </p>
                           </div>
                         </div>
@@ -424,39 +424,38 @@ export default function QuickActionDrawer() {
                       Registered Corporate Office
                     </span>
                     <div className="text-xs text-white/80 space-y-1.5">
-                      <p className="font-semibold text-white">OM International Courier & Cargo Services</p>
+                      <p className="font-semibold text-white">First Flight Global Express</p>
                       <p className="text-white/60 flex items-start gap-2">
                         <MapPin className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
-                        <span>51, Suraj Bhavan, Ground Floor, Karel Wadi, Thakurdwar, Mumbai - 400002, Maharashtra, India</span>
+                        <span>Demo Terminal 2, Air Cargo Complex, Sahar, Mumbai - 400099, India</span>
                       </p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 border-t border-white/[0.06] text-xs font-mono">
-                      <a href="tel:+919820729615" className="flex items-center gap-1.5 text-white/70 hover:text-white transition-colors">
+                      <a href="tel:+912255550199" className="flex items-center gap-1.5 text-white/70 hover:text-white transition-colors">
                         <Phone className="w-3.5 h-3.5 text-[#00F0FF]" />
-                        <span>+91 9820729615</span>
+                        <span>+91 22 5555 0199</span>
                       </a>
-                      <a href="tel:02223860032" className="flex items-center gap-1.5 text-white/70 hover:text-white transition-colors">
+                      <a href="tel:+919800000000" className="flex items-center gap-1.5 text-white/70 hover:text-white transition-colors">
                         <Phone className="w-3.5 h-3.5 text-white/40" />
-                        <span>022 2386 0032</span>
+                        <span>+91 98000 00000</span>
                       </a>
-                      <a href="mailto:cs.omcourierservices@gmail.com" className="col-span-2 flex items-center gap-1.5 text-white/70 hover:text-white transition-colors truncate">
+                      <a href="mailto:contact@firstflight-demo.com" className="col-span-2 flex items-center gap-1.5 text-white/70 hover:text-white transition-colors truncate">
                         <Mail className="w-3.5 h-3.5 text-[#10B981]" />
-                        <span>cs.omcourierservices@gmail.com</span>
+                        <span>contact@firstflight-demo.com</span>
                       </a>
                     </div>
                   </div>
 
                   {/* Direct WhatsApp Quick Connect */}
-                  <a
-                    href="https://wa.me/919869042220?text=Hello%20OM%20International%20Courier,%20I%20would%20like%20to%20inquire%20about%20freight%20and%20courier%20services."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                  <button
+                    type="button"
+                    onClick={() => alert("First Flight Global demo WhatsApp assistance: connect with our round-the-clock digital operations desk at contact@firstflight-demo.com.")}
+                    className="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] cursor-pointer"
                   >
                     <MessageCircle className="w-4 h-4" />
-                    <span>Chat on WhatsApp (+91 9869042220)</span>
-                  </a>
+                    <span>Chat on WhatsApp (+91 98000 00000 Demo)</span>
+                  </button>
 
                   {/* Quick Enquiry Form */}
                   <form 

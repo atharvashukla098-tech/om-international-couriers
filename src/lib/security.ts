@@ -1,5 +1,5 @@
 /**
- * OM International Security Suite
+ * First Flight Global Security Suite
  * Production-grade security utilities:
  * - In-memory rate limiting (sliding window per client IP)
  * - Strict input sanitization & XSS prevention

@@ -66,7 +66,7 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
   ];
 
   const metrics = [
-    { value: "1996", label: "Established Year", sub: "Girgaon, Mumbai", icon: Building2, color: "#10B981" },
+    { value: "1996", label: "Established Year", sub: "Mumbai Gateway", icon: Building2, color: "#10B981" },
     { value: "30+", label: "Years Experience", sub: "Unbroken Legacy", icon: Clock, color: "#00F0FF" },
     { value: "195+", label: "Countries Served", sub: "Global Corridors", icon: Globe2, color: "#38bdf8" },
     { value: "160+", label: "Mumbai Hubs", sub: "BOM Express Points", icon: MapPin, color: "#a855f7" },
@@ -75,7 +75,7 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
   const sixPillars = [
     {
       title: "Trusted Since 1996",
-      desc: "Over 30 years of proven reliability in international courier and logistics services from Girgaon, Mumbai.",
+      desc: "Over 30 years of proven reliability in international courier and logistics services from Mumbai Gateway.",
       icon: Clock,
       badge: "30+ Yrs Reliability",
       color: "#10B981",
@@ -122,8 +122,9 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
       year: "1996",
       era: "GENESIS",
       title: "Founded in Mumbai",
-      desc: "OM International was established in Girgaon, Mumbai, starting as an international courier company with a vision to connect India with the world.",
-      badge: "Est. Girgaon, Mumbai",
+      desc: "First Flight Global was established with a clear mission to pioneer express air cargo corridors and connect global commerce.",
+      badge: "Pioneering Genesis",
+
       color: "#10B981",
       icon: Building2,
     },
@@ -223,11 +224,12 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
 
                 <div className="space-y-3 text-white/70 text-sm sm:text-base leading-relaxed font-light">
                   <p>
-                    <strong className="text-white font-medium">OM International Courier Cargo Services</strong> is a leading international courier, cargo, freight forwarding, and logistics company established in <strong className="text-white">Girgaon, Mumbai</strong> in 1996. With over three decades of unbroken operational excellence, we have built an unassailable reputation for reliable, affordable, and secure shipping solutions.
+                    <strong className="text-white font-medium">First Flight Global Express</strong> is a next-generation international courier, air cargo, and freight forwarding platform. Engineered with high-reliability global air corridors, we deliver modern telemetry tracking, guaranteed transit windows, and end-to-end customs clearance.
                   </p>
                   <p className="text-white/60 text-xs sm:text-sm">
-                    From documents to heavy cargo, we handle every shipment with precision and care. Our global network spans across <strong className="text-[#00F0FF]">195+ countries</strong>, ensuring your parcels reach their destination safely and on time.
+                    From express documents to heavy palletized air freight, we handle every consignment with speed and telemetry visibility. Our global corridor network covers <strong className="text-[#00F0FF]">195+ countries</strong>.
                   </p>
+
                 </div>
 
                 {/* 4 Stat Cards */}
@@ -267,7 +269,7 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/hangar-hero.jpg"
-                      alt="OM International Global Freight"
+                      alt="First Flight Global Express"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-80" />
@@ -278,8 +280,8 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
                     </div>
 
                     <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono text-white/90 backdrop-blur-md bg-slate-950/80 border border-white/10 rounded-xl px-3 py-1.5">
-                      <span className="text-[#10B981]">30+ Years of Excellence</span>
-                      <span className="text-white/50">160+ Mumbai Hubs</span>
+                      <span className="text-[#10B981]">Express Air Freight</span>
+                      <span className="text-white/50">Next Flight Out</span>
                     </div>
                   </div>
 
@@ -296,8 +298,8 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
                     </div>
                     <div className="p-2 rounded-xl bg-white/[0.03] border border-white/5">
                       <Truck className="w-4 h-4 text-[#10B981] mx-auto mb-1" />
-                      <div className="font-bold text-white">Mumbai Surface</div>
-                      <div className="text-[10px] text-white/40 font-mono">160+ Pickup Hubs</div>
+                      <div className="font-bold text-white">Surface Transit</div>
+                      <div className="text-[10px] text-white/40 font-mono">24/7 Dispatch</div>
                     </div>
                   </div>
                 </div>
@@ -305,7 +307,7 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
             </motion.div>
           )}
 
-          {/* ════ Tab 1: WHY CHOOSE OM INTERNATIONAL (Screenshot 1) ════ */}
+          {/* ════ Tab 1: WHY CHOOSE FIRST FLIGHT GLOBAL ════ */}
           {activeTab === 1 && (
             <motion.div
               key="why-choose-us"
@@ -323,12 +325,13 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
                   </span>
                 </div>
                 <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
-                  Why Choose <span className="text-[#10B981]">OM International</span>
+                  Why Choose <span className="text-[#10B981]">First Flight Global</span>
                 </h2>
                 <p className="text-xs sm:text-sm text-white/60 mt-1 max-w-2xl mx-auto">
-                  Engineered from Girgaon, Mumbai to deliver guaranteed delivery, high security, and competitive rates across 195+ nations.
+                  Engineered with dedicated air corridors to deliver guaranteed delivery, high security, and competitive rates across 195+ nations.
                 </p>
               </div>
+
 
               {/* 6 Core Pillars Bento Grid (2-column on mobile so all 6 pillars fit cleanly) */}
               <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-5 text-left">
@@ -384,10 +387,10 @@ export default function AboutHeroStage({ progress = 0, scrollProgress, active = 
                   </span>
                 </div>
                 <h2 className="text-xl sm:text-4xl font-extrabold text-white tracking-tight">
-                  The Journey of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#00F0FF]">OM International</span>
+                  The Journey of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#00F0FF]">First Flight Global</span>
                 </h2>
                 <p className="text-[11px] sm:text-sm text-white/60 mt-1 max-w-2xl mx-auto">
-                  From a dedicated local courier company in Girgaon, Mumbai to a multi-modal global logistics powerhouse.
+                  From a dedicated local courier desk in Mumbai to a multi-modal global logistics powerhouse.
                 </p>
               </div>
 

@@ -312,7 +312,7 @@ function AirplaneHero({ progress, scrollProgress, active = true }: AirplaneHeroP
           <div className="relative w-16 h-16 flex items-center justify-center">
             <div className="absolute inset-0 rounded-full border-2 border-[#10B981]/20 animate-ping" />
             <div className="absolute inset-2 rounded-full border border-[#10B981]/40" />
-            <span className="text-[#10B981] font-extrabold font-mono text-lg">OM</span>
+            <span className="text-[#10B981] font-extrabold font-mono text-lg">FF</span>
           </div>
           <p className="text-white/50 text-[11px] font-mono tracking-[0.3em] uppercase">
             Initializing Flight Systems
@@ -381,16 +381,16 @@ function AirplaneHero({ progress, scrollProgress, active = true }: AirplaneHeroP
         </div>
 
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.05] drop-shadow-2xl max-w-2xl">
-          OM{" "}
+          First{" "}
           <span style={{ background: "linear-gradient(135deg, #10B981 0%, #00F0FF 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-            International
+            Flight
           </span>
           <br />
-          <span className="text-white/90">Couriers</span>
+          <span className="text-white/90">Global Express</span>
         </h1>
 
         <p className="text-white/50 text-sm mt-3 max-w-sm font-light tracking-wide">
-          Mumbai's Premier Air · Ocean · Express Cargo Network since 1996
+          Next-Gen Air · Ocean · Express Cargo Network — Demo Showcase
         </p>
 
         <div className="mt-6 flex items-center gap-3 text-white/35">
@@ -425,19 +425,19 @@ function AirplaneHero({ progress, scrollProgress, active = true }: AirplaneHeroP
                 BOM Runway 27L · Live
               </span>
             </div>
-            <span className="text-[9px] font-mono text-white/30 uppercase tracking-wider">Est. 1996</span>
+            <span className="text-[9px] font-mono text-white/30 uppercase tracking-wider">Demo Showcase</span>
           </div>
 
           {/* Brand name */}
           <h1 className="text-xl font-extrabold text-white tracking-tight leading-tight mb-0.5">
-            OM{" "}
+            First{" "}
             <span style={{ background: "linear-gradient(135deg, #10B981 0%, #00F0FF 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-              International
+              Flight
             </span>{" "}
-            <span className="text-white/85">Couriers</span>
+            <span className="text-white/85">Global</span>
           </h1>
           <p className="text-white/45 text-[11px] font-light mb-3">
-            Air · Ocean · Express · Mumbai since 1996
+            Air · Ocean · Express · Global Logistics Demo
           </p>
 
           {/* Inline telemetry row */}
@@ -506,7 +506,7 @@ function AirplaneHero({ progress, scrollProgress, active = true }: AirplaneHeroP
         {[
           { label: "Dest",   value: "220+ Nations" },
           { label: "Class",  value: "Air Cargo"    },
-          { label: "Flight", value: "OM-BOM-001"   },
+          { label: "Flight", value: "FF-BOM-001"   },
         ].map((s) => (
           <div key={s.label} className="text-left">
             <div className="text-[8px] font-mono text-white/25 uppercase tracking-widest">{s.label}</div>
@@ -521,27 +521,25 @@ function AirplaneHero({ progress, scrollProgress, active = true }: AirplaneHeroP
         className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none"
         style={{ opacity: 0, transform: "translateY(20px)", transition: "none" }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/om-logo.png"
-          alt="OM International"
-          className="w-32 sm:w-56 md:w-72 lg:w-80 mb-2 sm:mb-4 drop-shadow-[0_0_40px_rgba(16,185,129,0.5)]"
-        />
+        <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center text-slate-950 font-black text-2xl sm:text-4xl shadow-[0_0_50px_rgba(16,185,129,0.5)] mb-3 sm:mb-4">
+          FF
+        </div>
         <h1
           className="font-extrabold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-center px-4"
           style={{
-            fontSize: "clamp(1rem, 5vw, 3rem)",
+            fontSize: "clamp(1.2rem, 5vw, 3rem)",
             background: "linear-gradient(135deg, #fff 30%, #10B981 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
         >
-          OM International
+          First Flight Global
         </h1>
         <p className="text-white/40 text-[10px] sm:text-sm tracking-[0.12em] mt-1 font-light text-center">
-          Courier · Cargo · Logistics
+          Air · Ocean · Express Cargo Network
         </p>
       </div>
+
     </div>
   );
 }

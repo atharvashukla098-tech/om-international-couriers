@@ -13,9 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OM International Courier | Global Logistics Mumbai",
-  description: "Premium 3D spatial logistics platform",
+  title: "First Flight Global | 3D Spatial Logistics & Tracking",
+  description: "Next-gen 3D spatial logistics platform and international courier tracking showcase",
 };
+
 
 export default function RootLayout({
   children,

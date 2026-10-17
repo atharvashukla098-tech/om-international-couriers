@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Phone,
@@ -69,7 +70,7 @@ function HangarTrackingHero({ active = true }: HangarTrackingHeroProps) {
 
   const handleTrack = async (e?: React.FormEvent, customQuery?: string) => {
     if (e) e.preventDefault();
-    const cleanQuery = (customQuery ?? (query.trim() || "OM-8921-IN")).trim();
+    const cleanQuery = (customQuery ?? (query.trim() || "FF-8921-IN")).trim();
     setQuery(cleanQuery);
 
     setIsLoading(true);
@@ -96,7 +97,7 @@ function HangarTrackingHero({ active = true }: HangarTrackingHeroProps) {
   const getPlaceholder = () => {
     switch (activeTab) {
       case "tracking_no":
-        return "Enter Master Airway Bill (e.g. OM-8921-IN)";
+        return "Enter Master Airway Bill (e.g. FF-8921-IN)";
       case "forwarding_no":
         return "Enter partner courier / interline forwarding AWB";
       case "reference_no":
@@ -257,17 +258,17 @@ function HangarTrackingHero({ active = true }: HangarTrackingHeroProps) {
                 <span className="text-[11px] text-white/50">Verified Dockets:</span>
                 <button
                   type="button"
-                  onClick={() => handleTrack(undefined, "OM-8921-IN")}
+                  onClick={() => handleTrack(undefined, "FF-8921-IN")}
                   className="text-[11px] font-bold text-[#10B981] hover:underline cursor-pointer bg-[#10B981]/15 hover:bg-[#10B981]/25 px-2.5 py-0.5 rounded border border-[#10B981]/40 transition-colors"
                 >
-                  OM-8921-IN (London)
+                  FF-8921-IN (London)
                 </button>
                 <button
                   type="button"
-                  onClick={() => handleTrack(undefined, "OM-4402-AE")}
+                  onClick={() => handleTrack(undefined, "FF-4402-AE")}
                   className="text-[11px] font-bold text-[#00F0FF] hover:underline cursor-pointer bg-[#00F0FF]/15 hover:bg-[#00F0FF]/25 px-2.5 py-0.5 rounded border border-[#00F0FF]/40 hidden sm:inline-block transition-colors"
                 >
-                  OM-4402-AE (Dubai)
+                  FF-4402-AE (Dubai)
                 </button>
               </span>
             </div>
@@ -312,19 +313,19 @@ function HangarTrackingHero({ active = true }: HangarTrackingHeroProps) {
         {/* 6. Operations Hotline Support Bar */}
         <div className="mt-3 hidden sm:flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-white/80 font-mono px-4 py-1.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-white/15 shadow-xl">
           <a
-            href="tel:+919820729615"
+            href="tel:+912255550199"
             className="flex items-center gap-1.5 hover:text-[#10B981] transition-colors"
           >
             <Phone className="w-3 h-3 text-[#10B981]" />
-            <span>Air Cargo Ops: +91 9820729615</span>
+            <span>Air Cargo Ops: +91 22 5555 0199</span>
           </a>
           <span className="hidden sm:inline text-white/30">•</span>
           <a
-            href="mailto:cs.omcourierservices@gmail.com"
+            href="mailto:contact@firstflight-demo.com"
             className="flex items-center gap-1.5 hover:text-[#00F0FF] transition-colors"
           >
             <Mail className="w-3 h-3 text-[#00F0FF]" />
-            <span>cs.omcourierservices@gmail.com</span>
+            <span>contact@firstflight-demo.com</span>
           </a>
           <span className="hidden md:inline text-white/30">•</span>
           <span className="hidden md:flex items-center gap-1.5 text-white/60">
@@ -453,17 +454,13 @@ function HangarTrackingHero({ active = true }: HangarTrackingHeroProps) {
 
                   {/* External Tracking Link */}
                   <div className="pt-2">
-                    <a
-                      href={`https://admin.omcourier.in/api/tracking_api/get_tracking_data?tracking_no=${encodeURIComponent(
-                        result.trackingNo || query
-                      )}&customer_code=superadmin&company=OM-INTERNATIONAL-COURIER-CARGO-SERVICES&api_company_id=13`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      href="/dispatch"
                       className="w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/15 text-white/80 hover:text-white flex items-center justify-center gap-2 text-xs font-mono transition-all"
                     >
-                      <span>Inspect Raw Central Gateway Manifest</span>
+                      <span>View 3D Spatial Route on Global Radar</span>
                       <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ) : (
@@ -474,10 +471,10 @@ function HangarTrackingHero({ active = true }: HangarTrackingHeroProps) {
                   <p className="text-xs text-rose-300/70 mt-1">
                     Please verify your AWB or Reference number, or try the verified demo docket{" "}
                     <button
-                      onClick={() => handleTrack(undefined, "OM-8921-IN")}
+                      onClick={() => handleTrack(undefined, "FF-8921-IN")}
                       className="font-bold underline text-white cursor-pointer"
                     >
-                      OM-8921-IN
+                      FF-8921-IN
                     </button>
                     .
                   </p>

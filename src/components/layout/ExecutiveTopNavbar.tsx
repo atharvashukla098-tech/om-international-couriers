@@ -7,7 +7,7 @@ import { Radar, PackageSearch, Phone, ShieldCheck, Sparkles } from 'lucide-react
 export default function ExecutiveTopNavbar() {
   const triggerDrawer = (mode: 'track' | 'pickup' | 'enquiry') => {
     if (typeof window !== 'undefined') {
-      window.dispatchEvent(new CustomEvent('om-open-drawer', { detail: mode }));
+      window.dispatchEvent(new CustomEvent('ff-open-drawer', { detail: mode }));
     }
   };
 
@@ -20,18 +20,19 @@ export default function ExecutiveTopNavbar() {
           className="pointer-events-auto flex items-center gap-2 sm:gap-2.5 backdrop-blur-none sm:backdrop-blur-xl bg-slate-950/95 sm:bg-slate-950/80 border border-white/10 hover:border-white/20 px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-full shadow-2xl transition-all group shrink-0"
         >
           <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center text-slate-950 font-black text-xs shadow-[0_0_12px_rgba(16,185,129,0.4)]">
-            OM
+            FF
           </div>
           <div className="flex flex-col text-left">
             <span className="text-xs sm:text-sm font-extrabold tracking-tight text-white group-hover:text-emerald-300 transition-colors font-sans">
-              <span className="hidden sm:inline">OM INTERNATIONAL</span>
-              <span className="sm:hidden">OM INTL</span>
+              <span className="hidden sm:inline">FIRST FLIGHT GLOBAL</span>
+              <span className="sm:hidden">FIRST FLIGHT</span>
             </span>
             <span className="text-[8px] sm:text-[9px] font-mono text-white/50 tracking-wider hidden xs:flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399] animate-pulse" />
-              EST. 1996 • MUMBAI HQ
+              GLOBAL LOGISTICS • DEMO SHOWCASE
             </span>
           </div>
+
         </Link>
 
         {/* Center: Quick Links (desktop) */}

@@ -24,15 +24,15 @@ export function AboutCTA() {
     {
       title: "Direct Doorstep Pickup Request",
       desc: "Schedule doorstep collection across 160+ Mumbai locations in minutes.",
-      link: "https://wa.me/919869042220",
-      badge: "24/7 WHATSAPP",
+      link: "/dispatch",
+      badge: "DISPATCH GLOBE",
       badgeColor: "#10b981",
     },
     {
       title: "Commercial Tariff & Rate Enquiry",
       desc: "Custom corporate rates for high-volume cross-border shippers and ecommerce.",
-      link: "mailto:cs.omcourierservices@gmail.com",
-      badge: "INSTANT QUOTE",
+      link: "mailto:contact@firstflight-demo.com",
+      badge: "DEMO DESK",
       badgeColor: "#00F0FF",
     },
   ];

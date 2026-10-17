@@ -21,7 +21,7 @@ export function AboutHero() {
     {
       value: "1996",
       label: "Established Year",
-      sub: "Girgaon, Mumbai Genesis",
+      sub: "Mumbai Genesis",
       icon: Building2,
       accent: "#10B981",
     },
@@ -85,9 +85,9 @@ export function AboutHero() {
 
             <div className="space-y-4 text-white/70 text-base sm:text-lg leading-relaxed font-sans font-light">
               <p>
-                <strong className="text-white font-medium">OM International Courier Cargo Services</strong> is 
+                <strong className="text-white font-medium">First Flight Global Express</strong> is 
                 Mumbai&apos;s premier cross-border freight forwarding, air express, and international logistics corporation 
-                established in <span className="text-white font-medium">Girgaon, Mumbai</span> in 1996. Over three decades of 
+                established in <span className="text-white font-medium">Mumbai</span> in 1996. Over three decades of 
                 rigorous field experience have solidified our standing as a cornerstone partner for global commerce.
               </p>
               <p className="text-white/60 text-sm sm:text-base">
@@ -123,7 +123,7 @@ export function AboutHero() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/hangar-hero.jpg"
-                  alt="OM International Air Cargo Hub"
+                  alt="First Flight Global Air Cargo Hub"
                   className="w-full h-full object-cover object-center filter brightness-90 group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-90" />

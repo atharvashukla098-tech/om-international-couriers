@@ -29,7 +29,7 @@ export function WhyChooseUsGrid() {
     {
       title: "Trusted Since 1996",
       subtitle: "Three Decades of Unbroken Reliability",
-      description: "Over 30 years of proven reliability and regulatory mastery in international courier and logistics services. Established in Girgaon, Mumbai with institutional relationships with global customs authorities, airport freight terminals, and maritime port operators.",
+      description: "Over 30 years of proven reliability and regulatory mastery in international courier and logistics services. Established in Mumbai with institutional relationships with global customs authorities, airport freight terminals, and maritime port operators.",
       icon: Clock,
       accentColor: "#10B981",
       tag: "EST. 1996",
@@ -105,7 +105,7 @@ export function WhyChooseUsGrid() {
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
             Why Choose{" "}
-            <span className="text-[#10B981]">OM International</span>
+            <span className="text-[#10B981]">First Flight Global</span>
           </h2>
 
           <p className="text-white/60 text-base sm:text-lg">

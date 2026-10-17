@@ -42,7 +42,7 @@ export function TrackingResultModal({ result, isOpen, onClose }: TrackingResultM
             <div className="flex flex-col gap-1">
               <div className="flex items-center gap-2">
                 <span className="text-xs uppercase font-mono tracking-widest text-[#00F0FF]">
-                  OM International Courier
+                  First Flight Global
                 </span>
                 {result.isDemo && (
                   <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-[#10B981]/15 text-[#10B981] border border-[#10B981]/30 font-semibold">
@@ -71,7 +71,7 @@ export function TrackingResultModal({ result, isOpen, onClose }: TrackingResultM
                 <h4 className="font-semibold text-white">Consignment Not Found</h4>
                 <p className="text-sm text-white/70">{result.error || 'Please double check the docket number and try again.'}</p>
                 <div className="mt-3 text-xs font-mono text-white/50">
-                  Tip: Try testing with <span className="text-[#10B981] font-bold">OM-8921-IN</span> to preview telemetry details.
+                  Tip: Try testing with <span className="text-[#10B981] font-bold">FF-8921-IN</span> to preview telemetry details.
                 </div>
               </div>
             </div>
@@ -181,8 +181,8 @@ export function TrackingResultModal({ result, isOpen, onClose }: TrackingResultM
 
           {/* Footer note */}
           <div className="pt-4 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-white/40">
-            <span>OM International Courier Cargo Services • Est. 1996</span>
-            <span>HQ Thakurdwar, Mumbai</span>
+            <span>First Flight Global Express • Est. 1996</span>
+            <span>HQ Sahar Cargo Complex, Mumbai</span>
           </div>
         </motion.div>
       </div>

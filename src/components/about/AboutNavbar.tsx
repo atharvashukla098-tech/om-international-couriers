@@ -12,15 +12,12 @@ export function AboutNavbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand Logo & Tagline */}
         <Link href="/" className="flex items-center gap-3 group">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/om-logo.png"
-            alt="OM International"
-            className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-          />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center text-slate-950 font-black text-base shadow-[0_0_15px_rgba(16,185,129,0.4)] group-hover:scale-105 transition-transform">
+            FF
+          </div>
           <div className="flex flex-col">
             <span className="text-white font-extrabold text-base tracking-wider uppercase flex items-center gap-1.5">
-              OM International
+              First Flight Global
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#10B981] shadow-[0_0_8px_#10B981]" />
             </span>
             <span className="text-[10px] font-mono text-white/40 tracking-widest uppercase">
@@ -76,15 +73,13 @@ export function AboutNavbar() {
             <Globe2 className="w-4 h-4 text-[#00F0FF]" />
             <span>3D Radar</span>
           </Link>
-          <a
-            href="https://wa.me/919869042220"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/#tracking"
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#10B981] hover:bg-emerald-400 text-slate-950 text-xs font-semibold tracking-wide shadow-[0_0_20px_rgba(16, 185, 129,0.25)] transition-all"
           >
             <span>Express Dispatch</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Toggle */}
@@ -146,14 +141,13 @@ export function AboutNavbar() {
             >
               Launch 3D Dispatch
             </Link>
-            <a
-              href="https://wa.me/919869042220"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/#tracking"
+              onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center py-2.5 rounded-xl bg-[#10B981] text-slate-950 text-xs font-semibold"
             >
-              WhatsApp Express Desk
-            </a>
+              Express Dispatch Desk
+            </Link>
           </div>
         </div>
       )}

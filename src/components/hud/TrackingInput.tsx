@@ -18,7 +18,7 @@ export function TrackingInput({ value, onChange }: TrackingInputProps) {
         maxLength={64}
         autoComplete="off"
         spellCheck="false"
-        placeholder="Enter AWB or Container ID (e.g., OM-8921-IN)"
+        placeholder="Enter AWB or Container ID (e.g., FF-8921-IN)"
         className="w-full bg-white/[0.05] border border-white/10 rounded-xl px-4 py-3 text-white font-mono text-sm placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-[#10B981]/40 focus:border-[#10B981]/30 transition-all duration-300"
       />
     </div>

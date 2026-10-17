@@ -8,8 +8,8 @@ import { AboutCTA } from "@/components/about/AboutCTA";
 import { Footer } from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
-  title: "About Us | OM International Courier Cargo Services (Est. 1996)",
-  description: "Delivering trust across the globe since 1996. Over three decades of unbroken operational excellence in air cargo, maritime freight, and express logistics from Girgaon, Mumbai to 195+ sovereign nations.",
+  title: "About Us | First Flight Global Express (Est. 1996)",
+  description: "Delivering trust across the globe since 1996. Over three decades of unbroken operational excellence in air cargo, maritime freight, and express logistics from Mumbai to 195+ sovereign nations.",
 };
 
 export default function AboutPage() {

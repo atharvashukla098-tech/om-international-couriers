@@ -27,13 +27,13 @@ export function MilestoneTimeline() {
     {
       year: "1996",
       era: "FOUNDATIONAL GENESIS",
-      title: "Founded in Girgaon, Mumbai",
-      description: "OM International was established in Girgaon, South Mumbai, starting as an international courier company with a clear vision: to bridge Indian merchants, exporters, and families directly with the world through reliable, personalized dispatch.",
-      badge: "Est. Girgaon, Mumbai",
+      title: "Founded in Mumbai",
+      description: "First Flight Global was established in Mumbai, starting as an international courier company with a clear vision: to bridge Indian merchants, exporters, and families directly with the world through reliable, personalized dispatch.",
+      badge: "Est. Mumbai",
       icon: Building2,
       accentColor: "#10B981",
       highlights: [
-        "Headquartered at Girgaon commercial district",
+        "Headquartered at Mumbai commercial district",
         "Pioneered cross-border document express",
         "Direct Mumbai port & customs coordination",
       ],
@@ -42,7 +42,7 @@ export function MilestoneTimeline() {
       year: "2000s",
       era: "AVIATION EXPANSION",
       title: "Expansion into Air Cargo & Freight Forwarding",
-      description: "Recognizing the rapid growth of cross-border trade, OM International expanded operations into heavy commercial air cargo, air charter forwarding, and comprehensive multi-modal logistics solutions for corporate enterprises across India.",
+      description: "Recognizing the rapid growth of cross-border trade, First Flight Global expanded operations into heavy commercial air cargo, air charter forwarding, and comprehensive multi-modal logistics solutions for corporate enterprises across India.",
       badge: "Air cargo services launched",
       icon: Plane,
       accentColor: "#00F0FF",
@@ -99,11 +99,11 @@ export function MilestoneTimeline() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            The Journey of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#00F0FF]">OM International</span>
+            The Journey of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#00F0FF]">First Flight Global</span>
           </h2>
 
           <p className="text-white/60 text-base sm:text-lg">
-            From a dedicated courier desk in Girgaon, Mumbai to a multi-modal freight network spanning 195+ countries.
+            From a dedicated courier desk in Mumbai to a multi-modal freight network spanning 195+ countries.
           </p>
         </div>
 

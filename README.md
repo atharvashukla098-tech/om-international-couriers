@@ -1,4 +1,4 @@
-# ✈️ OM International 3D — Next-Gen Spatial Logistics Platform
+# ✈️ First Flight Global — 3D Spatial Logistics Platform
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.4.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
@@ -10,8 +10,7 @@
 
 > 🚀 **Live 24/7 Production URL:** **[https://om-courier-3d.vercel.app](https://om-courier-3d.vercel.app)**
 
-A high-performance, 3D interactive logistics web application engineered for **OM International Courier & Cargo Services** (Mumbai, India). Features Apple-tier cinematic scrollytelling, dual-pipeline responsive canvas rendering, an interactive 3D globe network, live telemetry console, and a hardened production security layer.
-
+A high-performance, 3D interactive logistics web application engineered under the **First Flight Global Express** portfolio. Features Apple-tier cinematic scrollytelling, dual-pipeline responsive canvas rendering, an interactive 3D globe network, simulated AWB telemetry engine, and a hardened production security layer.
 
 ---
 
@@ -29,7 +28,7 @@ A high-performance, 3D interactive logistics web application engineered for **OM
 - **Interactive Geocoding & Pin-Drop:** Search any city/hub globally or drop coordinates directly onto the sphere to calculate real-time haversine distance and multimodal transit times.
 
 ### 3. 📡 Real-Time Telemetry & Tracking Console
-- **Direct Carrier Integration:** Connected to the live OM International tracking backend for instant AWB, forwarding number, and reference docket lookups.
+- **Simulated Telemetry Engine:** Self-contained high-fidelity dispatch simulator for instant AWB (e.g. `FF-8921-IN`, `FF-4402-AE`), forwarding number, and reference docket lookups.
 - **Volumetric Weight Calculator:** Embedded IATA standard divisor (5000) calculator with dynamic cubic weight computation.
 
 ---
@@ -119,15 +118,15 @@ om-courier-3d/
 ---
 
 ## 🏢 Corporate Office
-
-**OM International Courier & Cargo Services**  
-51, Suraj Bhavan, Ground Floor, Karel Wadi, Thakurdwar,  
-Mumbai - 400002, Maharashtra, India.  
-- 📞 Phone: +91 9820729615 / 022 2386 0032  
-- 💬 WhatsApp: +91 9869042220  
-- ✉️ Email: cs.omcourierservices@gmail.com  
+ 
+**First Flight Global Express**  
+Demo Terminal 2, Air Cargo Complex, Sahar,  
+Mumbai - 400099, Maharashtra, India.  
+- 📞 Phone: +91 22 5555 0199 / +91 98000 00000  
+- 💬 WhatsApp: +91 98000 00000 (Demo Desk)  
+- ✉️ Email: contact@firstflight-demo.com  
 
 ---
 
 ## 📄 License
-Private Commercial Software — All Rights Reserved © 2026 OM International Courier & Cargo Services.
+Demonstration & Portfolio Platform — All Rights Reserved © 2026 First Flight Global Express.

@@ -39,7 +39,7 @@ const testimonials: Testimonial[] = [
     corridor: "LHR ➔ BOM Air Express",
     mode: "air",
     rating: 5,
-    text: "OM International has handled our time-critical London-to-Mumbai air freight for over 6 years. Customs clearance at BOM is consistently completed in under 4 hours, and their live airway telemetry gives our board total visibility.",
+    text: "First Flight Global has handled our time-critical London-to-Mumbai air freight for over 6 years. Customs clearance at BOM is consistently completed in under 4 hours, and their live airway telemetry gives our board total visibility.",
   },
   {
     id: "t2",
@@ -50,7 +50,7 @@ const testimonials: Testimonial[] = [
     corridor: "DXB ➔ BOM Sea-Air Gateway",
     mode: "ocean",
     rating: 5,
-    text: "When marine replacement parts require emergency dispatch from Nhava Sheva to Jebel Ali, OM International never misses a flight or vessel connection. Their 24/7 Mumbai operations desk delivers unmatched precision.",
+    text: "When marine replacement parts require emergency dispatch from Nhava Sheva to Jebel Ali, First Flight Global never misses a flight or vessel connection. Their 24/7 Mumbai operations desk delivers unmatched precision.",
   },
   {
     id: "t3",
@@ -61,7 +61,7 @@ const testimonials: Testimonial[] = [
     corridor: "BOM ➔ JFK Commercial Express",
     mode: "express",
     rating: 5,
-    text: "Exporting high-value commercial consignments to New York requires zero-error documentation. OM's EDI customs pre-clearance and multi-hub tracking have eliminated transit delays entirely across our US distributor network.",
+    text: "Exporting high-value commercial consignments to New York requires zero-error documentation. First Flight's EDI customs pre-clearance and multi-hub tracking have eliminated transit delays entirely across our US distributor network.",
   },
 ];
 
@@ -292,41 +292,40 @@ function TestimonialDock({ active = true }: { active?: boolean }) {
       <div className="w-full max-w-5xl mx-auto pt-2 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-white/45 font-mono shrink-0 md:pr-72 lg:pr-80">
         <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1">
           <a
-            href="tel:+919820729615"
+            href="tel:+912255550199"
             className="flex items-center gap-1 hover:text-[#10B981] transition-colors"
           >
             <Phone className="w-3 h-3 text-[#10B981]" />
-            <span>Air Cargo Ops: +91 9820729615</span>
+            <span>Air Cargo Ops: +91 22 5555 0199</span>
           </a>
           <span className="hidden sm:inline text-white/20">•</span>
           <a
-            href="mailto:cs.omcourierservices@gmail.com"
+            href="mailto:contact@firstflight-demo.com"
             className="flex items-center gap-1 hover:text-[#00F0FF] transition-colors"
           >
             <Mail className="w-3 h-3 text-[#00F0FF]" />
-            <span>cs.omcourierservices@gmail.com</span>
+            <span>contact@firstflight-demo.com</span>
           </a>
           <span className="hidden lg:inline text-white/20">•</span>
           <span className="hidden lg:flex items-center gap-1 text-white/35">
             <MapPin className="w-3 h-3" />
-            <span>Karel Wadi, Thakurdwar, Mumbai 400002</span>
+            <span>Air Cargo Complex, Sahar, Mumbai 400099</span>
           </span>
         </div>
 
         <div className="flex items-center gap-2">
           <span className="text-[10px] text-white/30">
-            © 1996–2026 OM International
+            © 1996–2026 First Flight Global
           </span>
           <span className="text-white/20">•</span>
-          <a
-            href="https://admin.omcourier.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors flex items-center gap-1 text-[10px] text-[#10B981]"
+          <button
+            type="button"
+            onClick={() => alert("First Flight Global Partner EDI Portal is currently in demonstration mode.")}
+            className="hover:text-white transition-colors flex items-center gap-1 text-[10px] text-[#10B981] cursor-pointer"
           >
             <span>Partner EDI Portal</span>
             <ExternalLink className="w-2.5 h-2.5" />
-          </a>
+          </button>
         </div>
       </div>
     </div>

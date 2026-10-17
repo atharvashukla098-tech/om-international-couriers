@@ -17,8 +17,8 @@ export function MumbaiGatewaySection() {
   const hubs = [
     {
       name: "Corporate Headquarters",
-      location: "Girgaon & Thakurdwar, South Mumbai",
-      details: "51, Suraj Bhavan, Ground Floor, Karel Wadi, Thakurdwar, Mumbai - 400002",
+      location: "Air Cargo Complex, Mumbai",
+      details: "Demo Terminal 2, Air Cargo Complex, Sahar, Mumbai - 400099, India",
       icon: MapPin,
       badge: "Est. 1996 Genesis",
       accent: "#10B981",
@@ -68,9 +68,9 @@ export function MumbaiGatewaySection() {
             </h2>
 
             <p className="text-white/70 text-base sm:text-lg font-light leading-relaxed">
-              Mumbai is India&apos;s commercial capital and primary maritime-aviation nexus. From our foundational headquarters 
-              in <strong className="text-white font-medium">Girgaon</strong> to our air cargo operations at BOM Airport 
-              and container freight stations at JNPT, OM International provides an unassailable gateway for international trade.
+              Mumbai is India&apos;s commercial capital and primary maritime-aviation nexus. From our foundational hubs 
+              in <strong className="text-white font-medium">Mumbai</strong> to our air cargo operations at BOM Airport 
+              and container freight stations at JNPT, First Flight Global provides an unassailable gateway for international trade.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -119,7 +119,7 @@ export function MumbaiGatewaySection() {
 
               <div className="space-y-4 mb-8">
                 <a
-                  href="tel:+919820729615"
+                  href="tel:+912255550199"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/20 transition-colors group"
                 >
                   <div className="p-3 rounded-xl bg-white/5 text-[#00F0FF] group-hover:scale-110 transition-transform">
@@ -128,16 +128,15 @@ export function MumbaiGatewaySection() {
                   <div>
                     <div className="text-xs font-mono text-white/40 uppercase">Direct Helpline</div>
                     <div className="text-sm sm:text-base font-mono font-bold text-white">
-                      +91 9820729615 / 022 2386 0032
+                      +91 22 5555 0199 / +91 98000 00000
                     </div>
                   </div>
                 </a>
 
-                <a
-                  href="https://wa.me/919869042220"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/20 transition-colors group"
+                <button
+                  type="button"
+                  onClick={() => alert("First Flight Global demo WhatsApp assistance: connect with our round-the-clock digital operations desk at contact@firstflight-demo.com.")}
+                  className="w-full flex items-center gap-4 p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/20 transition-colors group text-left cursor-pointer"
                 >
                   <div className="p-3 rounded-xl bg-white/5 text-[#25D366] group-hover:scale-110 transition-transform">
                     <MessageSquare className="w-5 h-5" />
@@ -145,13 +144,13 @@ export function MumbaiGatewaySection() {
                   <div>
                     <div className="text-xs font-mono text-white/40 uppercase">WhatsApp Instant Support</div>
                     <div className="text-sm sm:text-base font-mono font-bold text-white">
-                      +91 9869042220 (24/7 Active)
+                      +91 98000 00000 (Demo Desk)
                     </div>
                   </div>
-                </a>
+                </button>
 
                 <a
-                  href="mailto:cs.omcourierservices@gmail.com"
+                  href="mailto:contact@firstflight-demo.com"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/20 transition-colors group"
                 >
                   <div className="p-3 rounded-xl bg-white/5 text-[#10B981] group-hover:scale-110 transition-transform">
@@ -160,7 +159,7 @@ export function MumbaiGatewaySection() {
                   <div>
                     <div className="text-xs font-mono text-white/40 uppercase">Corporate Email</div>
                     <div className="text-sm sm:text-base font-mono font-bold text-white">
-                      cs.omcourierservices@gmail.com
+                      contact@firstflight-demo.com
                     </div>
                   </div>
                 </a>
@@ -171,15 +170,14 @@ export function MumbaiGatewaySection() {
                 <span className="text-xs text-white/40 font-mono">
                   Franchise & Partner Portal
                 </span>
-                <a
-                  href="https://admin.omcourier.in/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-mono text-[#10B981] hover:underline"
+                <button
+                  type="button"
+                  onClick={() => alert("First Flight Global Partner Portal is currently in demonstration mode.")}
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-[#10B981] hover:underline cursor-pointer"
                 >
-                  <span>admin.omcourier.in</span>
+                  <span>demo-portal.firstflight.internal</span>
                   <ExternalLink className="w-3.5 h-3.5" />
-                </a>
+                </button>
               </div>
             </div>
           </div>
