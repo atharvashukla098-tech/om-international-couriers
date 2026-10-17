@@ -48,3 +48,5 @@ next-env.d.ts
 # scratch & test artifacts
 /scratch/
 test_hub_stage1.png
+
+.vercel

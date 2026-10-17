@@ -6,8 +6,12 @@
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Security](https://img.shields.io/badge/Security-A%2B%20Hardened-10B981?style=for-the-badge&logo=shield)](https://github.com/atharvashukla098-tech/om-international-couriers)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-om--courier--3d.vercel.app-00F0FF?style=for-the-badge&logo=vercel)](https://om-courier-3d.vercel.app)
+
+> 🚀 **Live 24/7 Production URL:** **[https://om-courier-3d.vercel.app](https://om-courier-3d.vercel.app)**
 
 A high-performance, 3D interactive logistics web application engineered for **OM International Courier & Cargo Services** (Mumbai, India). Features Apple-tier cinematic scrollytelling, dual-pipeline responsive canvas rendering, an interactive 3D globe network, live telemetry console, and a hardened production security layer.
+
 
 ---
 

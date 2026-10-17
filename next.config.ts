@@ -57,8 +57,9 @@ const nextConfig: NextConfig = {
           {
             key: 'Access-Control-Allow-Origin',
             value: process.env.NODE_ENV === 'production' 
-              ? (process.env.ALLOWED_ORIGIN || 'https://om-international-couriers.vercel.app') 
+              ? (process.env.ALLOWED_ORIGIN || 'https://om-courier-3d.vercel.app') 
               : '*',
+
           },
           {
             key: 'Access-Control-Allow-Methods',
